@@ -1,0 +1,25 @@
+
+.btn-contact{
+    display: none;
+    align-items: center;
+    background-color: transparent;
+    i{
+        font-size: 24px;
+    }
+}
+
+.btn-default{
+    
+    color: var(--secondary-color);
+    border: none;
+    padding: 8px 25px;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+
+    &:hover{
+    background-color: var(--btn-color);
+    color: var(--secondary-color);
+    }
+}
