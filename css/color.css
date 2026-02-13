@@ -1,6 +1,13 @@
 :root{
-    --primary-color: #12314b;
-    --secondary-color: #ffffff;
-    --btn-color: #246eb8;
-    --line-animation: #246eb8;
+    --background-color1: img-url('images/bg1.jpg');
+    --background-color2: #03346E;
+    
+    
+    --text-color1: #F0BB78;
+    --text-color2: #E2E2B6;
+    --text-color3: #000;
+    --text-color4: #ffff;
+    
+    --btn-color: #0FFCBE;
+    --line-animation1: #E2E2B6;
 } 
