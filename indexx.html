@@ -18,9 +18,9 @@
 <body>
     <header>
         <nav>
-            <div class="logo">Lukas santos</div>
+            <div class="logo">Lukas</div>
             <ul class="menu-mobile" id="menu-mobile">
-                <li><a href="principal">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#projects">Projetos</a></li>
                 <li><a href="#contact">Contato</a></li>
@@ -34,20 +34,50 @@
                 
             </ul>
             <button class="tema" id="tema"  onclick="toggleTema()"><i id="tema-icon" class="fa-solid fa-moon"></i></button>
-            <button class="btn-contact btn-default" id="btn-mobile" onclick="toggleMenu()"><i id="btn-icon" class="fa-solid fa-bars" style="color: #e5e0e0;"></i></button>
+            <button class="btn-contact btn-default" id="btn-mobile" onclick="toggleMenu()"><i id="btn-icon" class="fa-solid fa-bars" "></i></button>
             
         </nav>
     </header>
     <main>
         <Section class="princital" id="home">
-                <h1>Olá, eu sou o Lukas</h1>
-                <p>Desenvolvedor Front-end</p>
+                <div class="img">
+                    <img src="image/image1.png" style="width: 300px; height: 300px;" alt="Foto de perfil">
+                </div>
+                <div class="container">
+                    <div class="txt">
+                        <h1>Olá, sou o <span>Lukas</span></h1>
+                        <p>Desenvolvedor Front-end</p>
+                        <p>apaixonado por tecnologia, programação, design e desafios!</p>
+                    </div>
+                    <div class="icons icon-redes">
+                        <a href="https://www.linkedin.com/in/lukas-santos-9b1a4b1b5/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/lukasousarj021" target="_blank "><i class="fa-brands fa-github"></i></a>
+                        <a href="tel:+5521965301087"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
         </Section>
-        <section class="secundaria" id="about">
-            olá todos
+        <section class="sobre" id="about">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officia et atque voluptatem mollitia laborum perspiciatis iure culpa veniam quidem sint nobis. Unde, quaerat eveniet. Excepturi numquam inventore labore deserunt.
         </section>
-        <section id="projects">
+        <section class="projetos" id="projects">
+            <div class="card card1">
+                <a href="http://"><img src="image/em-construcao.png" alt="projeto em construção, sem foto no momento"></a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam voluptatum vero quisquam corrupti. Ea quae dicta minima tempore facilis aliquid nesciunt assumenda molestias? Explicabo qui aspernatur nam commodi eos excepturi.</p>
+                <div class="icons">
+                    <a href=""><i class="fa-brands fa-html5" style="color: var(--icon-html);"></i></a>
+                    <a href=""><i class="fa-brands fa-css3-alt" style="color: var(--icon-css);"></i></a>
+                    <a href=""><i class="fa-brands fa-square-js" style="color: var(--icon-js);"></i></a>
+                </div>
+            </div>
+            <div class="card card2">
 
+            </div>
+            <div class="card card3">
+
+            </div>
+            <div class="card card4">
+                
+            </div>
         </section>
         <section id="contact">
             

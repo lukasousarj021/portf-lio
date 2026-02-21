@@ -7,32 +7,27 @@ let contact = document.getElementById('contact');
 
 
 function toggleMenu() {
-    
-    menu.classList.toggle('active');
 
-    let btnIcon = document.getElementById('btn-icon');
+  menu.classList.toggle('active');
 
-    if (btnIcon.classList.contains("fa-bars")) {
-  btnIcon.classList.replace("fa-bars", "fa-x");
-} else {
-  btnIcon.classList.replace("fa-x", "fa-bars");
+  let btnIcon = document.getElementById('btn-icon');
 
-}
+  if (btnIcon.classList.contains("fa-bars")) {
+    btnIcon.classList.replace("fa-bars", "fa-x");
+  } else {
+    btnIcon.classList.replace("fa-x", "fa-bars");
+
+  }
 }
 
 function toggleTema() {
-    let icon = document.getElementById('tema-icon');
+  let icon = document.getElementById('tema-icon');
 
-    if (icon.classList.contains("fa-moon")) {
-  icon.classList.replace("fa-moon", "fa-sun");
-  home.classList.toggle('dark');
-  about.classList.toggle('dark');
-  projects.classList.toggle('dark');
-  contact.classList.toggle('dark');
-} else {
-  icon.classList.replace("fa-sun", "fa-moon");
-}
+  if (icon.classList.contains("fa-moon")) {
+    icon.classList.replace("fa-moon", "fa-sun");
 
+  } else {
+    icon.classList.replace("fa-sun", "fa-moon");
 
-
+  }
 }
