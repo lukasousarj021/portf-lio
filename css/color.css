@@ -1,0 +1,23 @@
+:root{
+    --background-color1: #000;
+    --background-color2: #03346E;
+    --background-color3: #E2E2B6;
+    
+    
+    --text-color1: #F0BB78;
+    --text-color2: #E2E2B6;
+    --text-color3: #000;
+    --text-color4: #ffff;
+    
+    --btn-color: #000000;
+    --btn-color-hover: #E2E2B6;
+    --line-animation1: #E2E2B6;
+
+
+    --icon-html: #E34C26;
+    --icon-css: #1572B6;
+    --icon-js: #F7DF1E;
+} 
+
+
+
