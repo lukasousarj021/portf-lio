@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 
 }
 
@@ -16,30 +17,83 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
+    transition: 0.5s ease-in-out;
 
 }
 
+/* seletor de linguaagem */
+
+.language {
+    position: absolute;
+    top: 0p;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+    width: 100vw;
+    height: 50px;
+    justify-content: space-around;
+    background: #353535;
+    z-index: 2000;
+
+    ;
+
+
+
+    a {
+        color: var(--text-color4);
+        font-size: 1.2rem;
+        font-weight: bold;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: var(--text-color5);
+            transform: scale(1.1);
+            ;
+        }
+    }
+
+    .btn-language {
+        background-color: transparent;
+        border: none;
+        color: var(--text-color4);
+        font-size: 16px;
+        cursor: pointer;
+
+        &:hover {
+            color: var(--text-color2);
+            transform: scale(1.1);
+            ;
+        }
+    }
+
+}
+
+.fechar {
+    display: none;
+}
+
+
 nav {
     position: relative;
+    top: 50px;
     display: flex;
     justify-content: space-around;
     gap: 10rem;
-    padding: 12px;
+    padding: 10px;
+    align-items: center;
     background-color: var(--background-color1);
 
 
     ul {
 
-        text-align: center;
-
         li {
             line-height: 10px;
-            text-align: center;
-            align-items: center;
             margin: 8px;
             list-style: none;
 
             a {
+
                 color: var(--text-color1);
                 text-decoration: none;
                 font-size: 18px;
@@ -59,31 +113,6 @@ nav {
 
 
 
-.menu-mobile {
-    display: none;
-}
-
-.menu-desktop {
-    display: flex;
-    ;
-
-    a::after {
-        content: ' ';
-        display: block;
-        margin-top: 6px;
-        width: 0%;
-        height: 2px;
-        background-color: var(--line-animation1);
-        transition: width 0.3s ease-in-out;
-
-    }
-
-    a:hover::after {
-        width: 100%;
-    }
-}
-
-
 .logo {
     font-size: 22px;
     color: var(--text-color1);
@@ -95,6 +124,34 @@ nav {
         color: var(--text-color2);
     }
 }
+
+
+
+
+.menu-mobile {
+    display: none;
+}
+
+
+.menu-desktop {
+    display: flex;
+
+    a::after {
+        content: '';
+        display: block;
+        margin-top: 6px;
+        width: 0%;
+        height: 2px;
+        background-color: var(--line-animation1);
+        transition: width 0.3s ease-in-out;
+    }
+
+    a:hover::after {
+        width: 100%;
+    }
+}
+
+
 
 
 .tema {
@@ -111,8 +168,6 @@ nav {
         color: var(--text-color2);
     }
 }
-
-
 
 
 
