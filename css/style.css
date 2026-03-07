@@ -8,7 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-
+    
 }
 
 header {
@@ -25,7 +25,7 @@ header {
 
 .language {
     position: absolute;
-    top: 0p;
+    top: 0;
     left: 0;
     display: flex;
     align-items: center;
@@ -33,21 +33,17 @@ header {
     width: 100vw;
     height: 50px;
     justify-content: space-around;
-    background: #353535;
+    background: var(--background-language);
     z-index: 2000;
 
-    ;
-
-
-
     a {
-        color: var(--text-color4);
+        color: var(--text-nav);
         font-size: 1.2rem;
         font-weight: bold;
         transition: all 0.3s ease;
 
         &:hover {
-            color: var(--text-color5);
+            color: var(--hover-clean-nav);
             transform: scale(1.1);
             ;
         }
@@ -56,12 +52,12 @@ header {
     .btn-language {
         background-color: transparent;
         border: none;
-        color: var(--text-color4);
+        color: var(--btn-nav-white);
         font-size: 16px;
         cursor: pointer;
 
         &:hover {
-            color: var(--text-color2);
+            color: var(--hover-clean-nav);
             transform: scale(1.1);
             ;
         }
@@ -73,6 +69,9 @@ header {
     display: none;
 }
 
+/* Fim seletor de linguagem*/
+
+/* Nav */
 
 nav {
     position: relative;
@@ -82,9 +81,18 @@ nav {
     gap: 10rem;
     padding: 10px;
     align-items: center;
-    background-color: var(--background-color1);
-
-
+    box-shadow: 0 6px 4px rgba(133, 119, 119, 0.1);
+   
+    .back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 120%;
+        height: 100%;
+        background: var(--background-nav);
+        filter: blur(40px);
+        z-index: -1;
+    }
     ul {
 
         li {
@@ -94,44 +102,87 @@ nav {
 
             a {
 
-                color: var(--text-color1);
+                color: var(--text-nav);
                 text-decoration: none;
                 font-size: 18px;
                 margin: 0 10px;
                 transition: all 0.3s ease;
 
                 &:hover {
-                    color: var(--text-color2);
-                    transform: scale(1.9);
-                    ;
+                    color: var(--hover-nav);
                 }
 
             }
+             &:hover {
+                    color: var(--hover-nav);
+                    transform: scale(1.2);
         }
     }
 }
+}
 
+/* Fim nav */
 
+/* Logo */
 
 .logo {
-    font-size: 22px;
-    color: var(--text-color1);
+    font-size: 28px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 
-    &:hover {
-        color: var(--text-color2);
+    a{
+        text-decoration: none;
+        color: var(--text-nav);
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            color: var(--hover-nav);
+        }
+    }
+     &:hover {
+            color: var(--hover-nav);
+        transform: scale(1.2);
+        }
+}
+/* Fim logo*/
+
+
+/*Tema*/
+
+.tema {
+    width: 30px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    color: var(--text-nav);
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+   &:hover {
+        color: var(--hover-nav);
+        transform: scale(1.3);
     }
 }
 
+/* Fim tema */
 
 
+
+
+
+/* Menu mobile */
 
 .menu-mobile {
     display: none;
 }
 
+/* Fim menu mobile */
+
+
+
+/* Menu desktop */
 
 .menu-desktop {
     display: flex;
@@ -142,7 +193,7 @@ nav {
         margin-top: 6px;
         width: 0%;
         height: 2px;
-        background-color: var(--line-animation1);
+        background-color: var(--line-nav);
         transition: width 0.3s ease-in-out;
     }
 
@@ -151,23 +202,9 @@ nav {
     }
 }
 
+/* Fim menu desktop */
 
 
-
-.tema {
-    width: 30px;
-    height: 20px;
-    background-color: transparent;
-    border: none;
-    color: var(--text-color1);
-    font-size: 20px;
-    cursor: pointer;
-
-
-    &:hover {
-        color: var(--text-color2);
-    }
-}
 
 
 
@@ -198,11 +235,11 @@ nav {
     .btn-contact {
         display: block;
 
-        color: var(--text-color1);
+        color: var(--text-nav);
 
 
         &:hover {
-            color: var(--btn-color-hover);
+            color: var(--hover-nav);
 
 
         }
@@ -213,8 +250,8 @@ nav {
         display: block;
         position: absolute;
         left: 0;
-        bottom: -220px;
-        background-color: var(--background-color1);
+        bottom: -218px;
+        background-color: var(--background-mobile);
         width: 100%;
         height: 220px;
         z-index: 2000;

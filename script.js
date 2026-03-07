@@ -6,6 +6,8 @@ let projects = document.getElementById('projects');
 let contact = document.getElementById('contact');
 let header = document.getElementById('header');
 
+AOS.init();
+
  let lastscroll = 0;
 
 // função para esconder a barra de navegação ao rolar para baixo e mostrar a barra de navegação ao rolar para cima, para melhorar a experiência do usuário em dispositivos móveis.
@@ -92,19 +94,25 @@ function toggleTema() {
    
     icon.classList.replace("fa-sun", "fa-moon");
    
-    document.querySelector(".princital").style.backgroundImage = "url('image/escuro.avif')"; 
+    document.querySelector(".background").style.backgroundImage = "url('image/fundo-dark.png')"; 
     document.documentElement.style.setProperty('--background-color1', '#000');
     document.documentElement.style.setProperty('--text-color1', '#F0BB78');
-    document.documentElement.style.setProperty('--text-color2','#e2e2b6')
-  
+    document.documentElement.style.setProperty('--text-color2','#e2e2b6');
+    document.documentElement.style.setProperty('--background-nav', '#000');
+    document.documentElement.style.setProperty('--text-nav', '#fff');
+    document.documentElement.style.setProperty('--github', '#fff');
   } else {
     
     icon.classList.replace("fa-moon", "fa-sun");
     
-    document.querySelector(".princital").style.backgroundImage = "url('image/claro.png')";
+    document.querySelector(".background").style.backgroundImage = "url('image/claro.png')";
     document.documentElement.style.setProperty('--background-color1', '#ffffff');
-    document.documentElement.style.setProperty('--text-color1', '#000000');
+    document.documentElement.style.setProperty('--text-color1','#f1aa4c');
     document.documentElement.style.setProperty('--text-color2','#000')
+    document.documentElement.style.setProperty('--github', '#000');
+    document.documentElement.style.setProperty('--background-nav', '#fff');
+    document.documentElement.style.setProperty('--text-nav', '#000');
+ 
   }
 }
 
@@ -113,5 +121,7 @@ function toggleTema() {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  document.querySelector(".princital").style.backgroundImage = "url('image/escuro.avif')";
+  document.querySelector(".background").style.backgroundImage = "url('image/fundo-dark.png')";
 });
+
+

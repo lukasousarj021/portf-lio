@@ -1,24 +1,53 @@
 :root{
-    --background-color1: #000000;
-    --background-color2: #c4dcfa;
+    --background-black: #000000;
+    --background-black2: #191919;
     --background-color3: #E2E2B6;
     --background-color4: #bbbbb5;
-    
-    --text-color1: #F0BB78;
-    --text-color2: #E2E2B6;
+    --background-color5: #0c0d14; 
+    --background-card: #242424;
+
+
+    --text-color2: #faf9f9;
     --text-color3: #000;
-    --text-color4: #ffff;
+    --text-white: #ffff;
     --text-color5: #f3f3e5;
     
     --btn-color: #000000;
     --btn-color-hover: #E2E2B6;
-    --line-animation1: #E2E2B6;
+    --line-animation1: #034878;
+    
+
+  
+   
+   /*nav colors*/
+    --background-language: #242424;
+    --background-mobile: #000000;
+    --text-nav: #fcfcfc;
+    --hover-clean-nav: #efefef;
+    --hover-nav: #0A66C2;
+    --btn-nav-white: #fff;
+    --background-nav: #000000;
+    --line-nav: #bd3085cb;
 
 
+    /* main colors*/
+
+    --text-span: #0f87ff;
+    --text: #fff;
+   
+
+
+      /*icons*/
+    
     --icon-html: #E34C26;
     --icon-css: #1572B6;
     --icon-js: #F7DF1E;
+    --linkedin: #0A66C2;
+    --github: #ffffff;
+    --whatsapp: #30ff7c;
+
 } 
+
 
 
 

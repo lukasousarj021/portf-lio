@@ -10,20 +10,56 @@ main {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        color: var(--text-color1);
-        font-size: 24px;
-        font-weight: bold;
-        background-image: url(../image/fundo.avif);
-        background-size: cover;
-        background-position: center;
+        overflow: hidden;
+        position: relative;
 
-        img{
-            width: 300px;
+        img {
+            width: clamp(200px, 30vw, 400px);
             height: auto;
-            border-radius: 150px;
+            border-radius: 250px;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                transform: skewX(2deg) scale(1.1); ;
+            }
+        }
+
+        .txt {
+
+            padding: clamp(2px, 5vw, 5px);
+            color: var(--text);
+            transition: all 1.3s ease-in-out;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+           
+            span {
+                color: var(--text-span);
+                border-bottom: solid 2px var(--text-span);
+            }
+
+            h1 {
+                font-size: clamp(35px, 3vw, 58px);
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: clamp(26px, 2vw, 35px);
+                line-height: 1.5;
+                font-weight: bold;
+
+            }
         }
     }
- 
+
+    .background {
+        position: absolute;
+        width: 135%;
+        height: 120%;
+        z-index: -1;
+        background-image: url(../image/fundo-dark.png);
+        filter: blur(3px);
+        background-size: cover;
+        background-position: center;
+    }
 
     .sobre {
         display: flex;
@@ -31,8 +67,7 @@ main {
         width: 100%;
         height: 100dvh;
         align-items: center;
-        background-color: var(--background-color3);
-
+        background-color: var(--background-color5);
 
 
     }
@@ -43,37 +78,49 @@ main {
         width: 100%;
         height: 160rem;
         align-items: center;
-        background-color: var(--background-color2);
+        background-color: var(--background-black);
 
         .card {
             width: clamp(300px, 80vw, 400px);
             height: 550px;
-            background-color: var(--background-color1);
+            background-color: var(--background-card);
             margin: 100px 20px 0px 20px;
             border-radius: 20px;
-            color: var(--text-color1);
+            color: var(--text-black);
             padding: 50px 25px;
 
 
         }
     }
 
-    .icons{
-                display: flex;
-                justify-content: end;
-                gap: 20px;
-                font-size: 25px;
+    .icons {
+        display: flex;
+        justify-content: end;
+        gap: 20px;
+        font-size: 30px;
 
-                a{
-                    color: var(--text-color1);
-                    transition: all 0.3s ease-in-out;
+        a {
+            transition: all 0.3s ease-in-out;
+        }
 
-                    &:hover {
-                        color: var(--btn-color-hover);
-                        
-                    }
-                }
-            }
+        :hover {
+            transform: scale(1.2);
+        }
+
+        .linkedin {
+            color: var(--linkedin);
+        }
+
+        .github {
+            color: var(--github);
+        }
+
+        .whatsapp {
+            color: var(--whatsapp);
+        }
+
+
+    }
 
 }
 
@@ -91,26 +138,6 @@ main {
 }
 
 
-.txt {
-  
-    padding: clamp(2px, 5vw, 5px);
-    color: var(--text-color2);
-
-    span {
-        color: var(--text-color1);
-        border-bottom: solid 2px var(--text-color1);
-    }
-
-    h1 {
-        font-size: clamp(45px, 5vw, 58px);
-        margin-bottom: 10px;
-    }
-
-    p {
-        font-size: clamp(18px, 3vw, 22px);
-        line-height: 1.5;
-    }
-}
 
 .container {
     display: flex;
@@ -120,15 +147,35 @@ main {
 
 
 .icon-redes {
-   margin-top: 50px;
+    margin-top: 50px;
 }
 
 
 
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100dvh;
+    align-items: center;
+    background-color: var(--background-color3);
 
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 50px;
 
-
-
+        input {
+            padding: 10px;
+            width: 300px;
+            border-radius: 5px;
+            border: none;
+            background-color: var(--background-black);
+            color: var(--text-color2);
+        }
+    }
+}
 
 
 
